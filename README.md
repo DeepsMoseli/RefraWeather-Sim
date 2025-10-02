@@ -98,3 +98,11 @@ RefraWeather-Sim/
 ├─ requirements.txt
 └─ README.md
 ```
+
+@article{motsoehli2025refraweather,
+  title   = {Simulating Refractive Distortions and Weather-Induced Artifacts for Resource-Constrained Autonomous Perception},
+  author  = {Mots'oehli, Moseli and Chen, Feimei and Chan, Hok Wai and Tlali, Itumeleng and Babeli, Thulani and Baek, Kyungim and Chen, Huaijin},
+  journal = {arXiv preprint arXiv:2507.05536},
+  year    = {2025}
+}
+
