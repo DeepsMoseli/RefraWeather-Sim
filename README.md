@@ -21,9 +21,32 @@
 
 ---
 
-## Synthetic Fog & Lens Flare
+## Distortions
 
-<p align="center"> <table> <tr> <td align="center"><b>Original</b></td> <td align="center"><b>Sim Homogeneus Fog </b></td> </tr> <tr> <td><img src="assets/examples/homo_fog_orig.png" width="470"></td> <td><img src="assets/examples/homo_fog_sim.png" width="470"></td> </tr> <tr> <td align="center"><b>Original</b></td> <td align="center"><b>Sim Heterogeneus Fog</b></td> </tr> <tr> <td><img src="assets/examples/hetero_fog_orig.png" width="470"></td> <td><img src="assets/examples/hetero_fog_sim.png" width="470"></td> </tr> <tr> <td align="center"><b>Original</b></td> <td align="center"><b>Sim Light Flare</b></td> </tr> <tr> <td><img src="assets/examples/light_flare_orig.png" width="470"></td> <td><img src="assets/examples/light_flare_sim.png" width="470"></td> </tr> </table> </p>
+### Photometric: Synthetic Fog & Lens Flare
+
+<div align="center">
+
+<!-- PDF 1: Photometric distortions (full width) -->
+<object data="Example_photometric_distortions_grid.pdf" type="application/pdf" width="100%" height="720px">
+  <a href="Example_photometric_distortions_grid.pdf">photometric distortions (PDF)</a>
+</object>
+
+</div>
+
+<br/>
+
+### Geometric: Refractive Lens Distortions
+
+<div align="center">
+
+<!-- PDF 2: Geometric (refractive) distortions (full width) -->
+<object data="example_geometric_distortions.pdf" type="application/pdf" width="100%" height="720px">
+  <a href="example_geometric_distortions.pdf">refractive lens distortions (PDF)</a>
+</object>
+
+</div>
+
 
 ---
 
