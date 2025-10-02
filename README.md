@@ -26,7 +26,6 @@
 ### Photometric: Synthetic Fog & Lens Flare
 
 <div align="center">
-  <!-- PNG 1: Photometric distortions (full width) -->
   <img src="Example_photometric_distortions_grid.png" alt="Photometric distortions: fog & lens flare grid" width="100%"/>
   <br/>
   <em>Photometric distortions (fog & lens flare)</em>
@@ -37,7 +36,6 @@
 ### Geometric: Refractive Lens Distortions
 
 <div align="center">
-  <!-- PNG 2: Geometric (refractive) distortions (full width) -->
   <img src="example_geometric_distortions.png" alt="Geometric refractive lens distortions grid" width="100%"/>
   <br/>
   <em>Geometric (refractive) distortions</em>
@@ -49,7 +47,6 @@
 
 ## ⚡️ Quickstart
 ```bash
-# Clone + env
 git clone https://github.com/your-org/RefraWeather-Sim.git
 cd RefraWeather-Sim
 python -m venv .venv && source .venv/bin/activate
@@ -88,8 +85,6 @@ python -m refraweather.eval.psnr     --data-root data/sim/weather    --ckpt runs
 
 ```bash
 RefraWeather-Sim/
-├─ docs/
-│  └─ hero.png                  # replace with your overview figure
 ├─ configs/
 │  ├─ sim_refractive.yaml
 │  ├─ sim_weather.yaml
@@ -115,7 +110,7 @@ RefraWeather-Sim/
 │  │     ├─ hetero_fog.py
 │  │     └─ lens_flare.py
 │  ├─ models/
-│  │  └─ unet.py                # used for both tasks
+│  │  └─ unet.py 
 │  ├─ train/
 │  │  ├─ train_refractive.py
 │  │  └─ train_deweather.py
