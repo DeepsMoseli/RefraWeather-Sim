@@ -22,6 +22,12 @@
 
 ---
 
+## Synthetic Fog & Lens Flare
+
+<p align="center"> <table> <tr> <td align="center"><b>Original</b></td> <td align="center"><b>Sim Homogeneus Fog </b></td> </tr> <tr> <td><img src="assets/examples/homo_fog_orig.png" width="470"></td> <td><img src="assets/examples/homo_fog_sim.png" width="470"></td> </tr> <tr> <td align="center"><b>Original</b></td> <td align="center"><b>Sim Heterogeneus Fog</b></td> </tr> <tr> <td><img src="assets/examples/hetero_fog_orig.png" width="470"></td> <td><img src="assets/examples/hetero_fog_sim.png" width="470"></td> </tr> <tr> <td align="center"><b>Original</b></td> <td align="center"><b>Sim Light Flare</b></td> </tr> <tr> <td><img src="assets/examples/light_flare_orig.png" width="470"></td> <td><img src="assets/examples/light_flare_sim.png" width="470"></td> </tr> </table> </p>
+
+---
+
 ## ⚡️ Quickstart
 ```bash
 # Clone + env
@@ -99,10 +105,14 @@ RefraWeather-Sim/
 └─ README.md
 ```
 
+## 📜 Citation
+
+```bibtex
 @article{motsoehli2025refraweather,
   title   = {Simulating Refractive Distortions and Weather-Induced Artifacts for Resource-Constrained Autonomous Perception},
   author  = {Mots'oehli, Moseli and Chen, Feimei and Chan, Hok Wai and Tlali, Itumeleng and Babeli, Thulani and Baek, Kyungim and Chen, Huaijin},
   journal = {arXiv preprint arXiv:2507.05536},
   year    = {2025}
 }
+```
 
