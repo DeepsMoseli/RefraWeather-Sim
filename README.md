@@ -64,6 +64,8 @@ python -m refraweather.eval.psnr     --data-root data/sim/weather    --ckpt runs
 
 -----
 
+## File Structure
+
 ```bash
 RefraWeather-Sim/
 ├─ docs/
