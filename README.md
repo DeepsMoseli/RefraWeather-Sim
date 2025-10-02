@@ -2,7 +2,7 @@
 **Simulating Refractive Distortions & Weather-Induced Artifacts for Resource-Constrained Autonomous Perception (ICCV CV4DC Workshop 2025)**  
 
 <p align="center">
-  <img src="docs/hero.png" width="92%" alt="RefraWeather pipeline hero"/>
+  <img src="framework.png" width="92%" alt="RefraWeather pipeline hero"/>
 </p>
 
 <p align="center">
