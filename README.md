@@ -95,21 +95,21 @@ RefraWeather-Sim/
 │  └─ sim/
 │     ├─ refractive/            # images_clean/, images_distorted/, uv_maps/, meta.json
 │     └─ weather/               # images_clean/, images_corrupted/, alpha_maps/, meta.json
-├─ refraweather/
+├─ src/
 │  ├─ __init__.py
-│  ├─ sim/
-│  │  ├─ run_distortions.py
+│  ├─ simulation/
+│  │  ├─ run_refractive.py
 │  │  ├─ run_weather.py
-│  │  ├─ distortions/
+│  │  ├─ Refractive_distortions/
 │  │  │  ├─ radial.py
 │  │  │  ├─ perlin.py
 │  │  │  ├─ tps.py
 │  │  │  └─ divfree.py
-│  │  └─ weather/
+│  │  └─ Wearther_artifacts/
 │  │     ├─ uniform_fog.py
 │  │     ├─ hetero_fog.py
 │  │     └─ lens_flare.py
-│  ├─ models/
+│  ├─ restoration_models/
 │  │  └─ unet.py 
 │  ├─ train/
 │  │  ├─ train_refractive.py
