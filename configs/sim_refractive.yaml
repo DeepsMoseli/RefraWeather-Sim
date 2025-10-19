@@ -1,0 +1,65 @@
+# === Refractive / geometric warp simulation ===
+# Input frames (undistorted)
+input_dir: "data/raw"
+
+# All outputs for refractive sims go under this root:
+base_out: "data/sim/refractive"
+
+max_samples: 25000
+max_workers: 40
+seed: 1234
+
+calibration:
+  path: "dashcam_calib.json"   # put this at repo root (or change path)
+  d_jitter_alpha: 0.01
+  d_jitter_abs_min: 1.0e-6
+  undistort_alpha: 0.0
+
+checkerboard:
+  height: 1080
+  width: 1920
+  tile_size: 120
+
+uv_dtype: "float16"
+
+# Output folders (created inside base_out)
+out_dirs:
+  radial: "radial/images_distorted"
+  radial_uv: "radial/uv_maps"
+  radial_checkboard: "radial/checkerboards"
+
+  perlin: "perlin/images_distorted"
+  perlin_uv: "perlin/uv_maps"
+  perlin_checkboard: "perlin/checkerboards"
+
+  tpl: "tpl/images_distorted"
+  tpl_uv: "tpl/uv_maps"
+  tpl_checkboard: "tpl/checkerboards"
+
+  incompressible: "divfree/images_distorted"
+  incompressible_uv: "divfree/uv_maps"
+  incompressible_checkboard: "divfree/checkerboards"
+
+# Random parameter ranges
+warps:
+  perlin:
+    amp_range: [1.0, 3.0]
+    len_scale_range: [10.0, 20.0]
+    var_range: [0.5, 1.5]
+    seed_x: null
+    seed_y: null
+    downscale_range: [3, 8]
+  tpl:
+    amp_range: [1.0, 3.0]
+    len_scale_range: [10.0, 20.0]
+    var_range: [0.5, 1.5]
+    exponent_range: [1.0, 2.0]
+    seed_x: null
+    seed_y: null
+    downscale_range: [3, 8]
+  incompressible:
+    amp_range: [1.0, 3.0]
+    len_scale_range: [10.0, 20.0]
+    var_range: [0.5, 1.5]
+    seed: null
+    downscale_range: [3, 8]

@@ -1,0 +1,37 @@
+# === Photometric / weather artifact simulation ===
+input_dir: "data/raw"
+base_out: "data/sim/weather"
+
+max_samples: 2000
+process_pool: true
+seed: 1234
+
+# physical constants
+max_depth_m: 160.0
+visibility_dist_m_for_5pct_t: 100.0
+atmos_rgb: [220, 220, 235]
+fog_strength_base: 0.5  # each image perturbed ±5%
+
+# heterogeneous fog recipe
+perlin_scales: [4, 8, 16, 32, 64, 128]
+perlin_weights: [0.30, 0.22, 0.15, 0.11, 0.08, 0.07]
+
+# lens flare defaults; each image perturbed ±5%
+flare:
+  default_intensity: 0.6
+  default_radius_frac: 0.3
+  seed: null  # random each image if null
+
+# Output folders (inside base_out)
+out_dirs:
+  uniform_fog: "uniform_fog/images_corrupted"
+  uniform_fog_kmap: "uniform_fog/alpha_maps"
+  uniform_fog_kvis: "uniform_fog/alpha_maps_viz"
+
+  hetero_fog: "hetero_fog/images_corrupted"
+  hetero_fog_kmap: "hetero_fog/alpha_maps"
+  hetero_fog_kvis: "hetero_fog/alpha_maps_viz"
+
+  flare: "flare/images_corrupted"
+  flare_kmap: "flare/alpha_maps"
+  flare_kvis: "flare/alpha_maps_viz"
